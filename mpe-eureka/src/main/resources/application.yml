@@ -1,0 +1,20 @@
+spring:
+  application:
+    name:mpe-eureka
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
+server:
+  port: 8283
+
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: true
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://127.0.0.1:8283/eureka
